@@ -1,4 +1,5 @@
-﻿@{
+﻿@using ExternalImageLink.RazorHtmlHelpers
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -19,9 +20,10 @@
         <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2>Get Link to images</h2>
+        <p>
+            @Html.ExternalImageLink("http://i.space.com/images/i/000/005/972/i02/sun-photo-solar-filament-101118-02.jpg?1294094311", "Image", true, 128, null)
+        </p>
     </div>
     <div class="col-md-4">
         <h2>Web Hosting</h2>
